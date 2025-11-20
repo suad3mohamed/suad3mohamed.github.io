@@ -22,7 +22,11 @@ Improved Public Health (This app aims to helps consumers make safer decisions wh
 6- Data Transparency ( The app provides full transparency by showing food hygiene ratings exactly as they are, with no changes or adjustments. This allows the public to view the ratings clearly and holds businesses accountable for their hygiene practices)
 
 ### Options Considered
-TODO: What are some other customer options or leading products that address the same needs?
+1) Government Websites (FSA or Local Council)  - These sites have the data, but they’re hard to navigate, not mobile-friendly, and users can’t easily filter results. They often have to search or download large files.
+2) Open Data Platforms (e.g., Open Bristol) -  Just like the goverment webs, open data has the ratings, but it’s in a format that's hard for most people to understand. Users would need to download big files and figure out how to use the data, which isn’t quick or easy.
+3) Third-Party Review Apps  - These platforms sometimes include hygiene ratings, but the main focus is on user reviews. This means hygiene ratings can be mixed in with other types of feedback, not up to date, making it unclear for users who are specifically looking for hygiene information. 
+4) Creating a New App  - Building an app gives me full control to design a simple straighforward user-friendly platform, that shows up-to-date hygiene ratings and makes it easy for people to find the info they need.
+
 
 ### Expected Risks
 1) Privacy and Security Concerns
