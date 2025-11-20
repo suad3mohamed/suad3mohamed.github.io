@@ -19,15 +19,24 @@ Improved Public Health (This app aims to helps consumers make safer decisions wh
 
 5- Real-Time Data Access (The application ensures that users have immediate access to the latest food hygiene ratings)
 
-6- 
+6- Data Transparency ( The app provides full transparency by showing food hygiene ratings exactly as they are, with no changes or adjustments. This allows the public to view the ratings clearly and holds businesses accountable for their hygiene practices)
 
 ### Options Considered
 TODO: What are some other customer options or leading products that address the same needs?
 
 ### Expected Risks
-TODO: What are the main risks of this project?
+1) Privacy and Security Concerns
+ If the app allows users to report hygiene issues or leave feedback, it’s essential to ensure both user and business information is kept confidential. Without proper security measures, there’s a risk of breach of data, which could lead to violations of privacy laws.
+2) Maintenance and Scalability
+The app may face challenges in scaling as the number of food premises grows. Continuous updates and maintenance may be needed to ensure the app remains reliable, especially as new hygiene inspection data is added regularly.
+3) Incomplete Data / Data Accuracy
+ There are thousands of new food businesses without hygiene ratings, so it may take time for the app to gather and display accurate information for all of them. This could result in incomplete data, which might frustrate users who expect to see ratings for every business. Also, since food hygiene ratings rely on inspections conducted by local authorities, there may be a delay in receiving and updating this data. Any inconsistency or delay of inspection results could affect the reliability of the app
+
 
 ## Project Scope
-TODO: Scope of the System of Interest. Include a bullet list of things from your context diagram that are in scope.
+- Food Hygiene Ratings Display 
+- Business Feedback and Reporting
+- Search and Filter Features
+- User Account Management
 
 ![Insert your Context Diagram Here](images/context.png)
