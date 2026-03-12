@@ -38,15 +38,13 @@ TODO: List and describe the actors/users for this product.
 4. Open Bristol Data API (External System) The external data source that supplies all food hygiene rating information used by the application. This is an external actor that the system depends on. It provides a publicly accessible API through which the application retrieves up-to-date records about food businesses in Bristol. The data fields provided include: business name, address, business type, rating, rating status, new rating pending, rating date, postcode, and rating graphic URL.
 
 ### Use Cases
-TODO: Describe each use case (at least one per team member).
-    Give each use case a unique ID, e.g. UC1, UC2, ...
-    Summarise these using the use-case template below.
 
-| UC2 |  | 
+
+| UC2 |  View and Understand Hygiene Rating Scores| 
 | -------------------------------------- | ------------------- |
 | **Description** |This use case allows users to understand what the food hygiene ratings (0–5) mean for each business. Instead of only seeing a number, the user can learn the significance of the rating, such as whether a score indicates excellent hygiene, satisfactory conditions, or urgent improvements needed. By providing clear explanations, the system helps users make informed and safe decisions about where to eat. |
 | **Actors** | Primary: General Public User, Parent or Guardian. Secondary: System, Open Bristol Data API. |
-| **Assumptions** | 
+| **Assumptions** | The Open Bristol Data API is available and providing up-to-date rating information for food businesses. The system is fully operational and capable of displaying business details correctly. The user is accessing the application through a modern web browser or device that can show the website and the rating images properly.. Additionally, it is assumed that the dataset contains all the necessary information for the selected business, including the name, address, rating score, rating status, rating date, and rating graphic, so that the user can read and interpret the rating accurately.
 | **Steps** | 1- The user has already performed a search or applied filters and is viewing a list of food businesses. 2- The user has selected a specific food business from the search results to view its details. 3- The system has access to the Open Bristol Data API and can retrieve the latest rating information (score, status, and rating date) for the selected business. 4-  The user is ready to read and interpret the rating information, including the numeric score, rating status, and any relevant notes provided by the system.|
 | **Variations** |  |
 | **Non-functional** | |
