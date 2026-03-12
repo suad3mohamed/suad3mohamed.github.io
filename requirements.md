@@ -146,4 +146,4 @@ Indicate which UC the requirement comes from.
 
 **Maintainability (ISO/IEC 9126)**
 
-*NFR10: The system shall be built using modular, well-organised, and clearly commented HTML, CSS, and JavaScript code, so that future developers can understand and extend the application without difficulty. Source: UC1, UC2
+- NFR10: The system shall be built using modular, well-organised, and clearly commented HTML, CSS, and JavaScript code, so that future developers can understand and extend the application without difficulty. Source: UC1, UC2
