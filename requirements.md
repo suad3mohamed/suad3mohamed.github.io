@@ -69,12 +69,9 @@ TODO: Your Use-Case diagram should include all use-cases.
 
 ## Software Requirements Specification
 ### Functional requirements
-TODO: create a list of functional requirements. 
-    e.g. "The system shall ..."
-    Give each functional requirement a unique ID. e.g. FR1, FR2, ...
-    Indicate which UC the requirement comes from.
 
-UC1: Search and Filter Food Hygiene Ratings
+**UC1: Search and Filter Food Hygiene Ratings**
+
 FR1: The system shall provide a search bar on the homepage that allows users to enter a business name, postcode, or address to search for food businesses. Source: UC1, US1, US6
 
 FR2: The system shall query the Open Bristol Data API using the user's search term and retrieve matching food business records. Source: UC1
@@ -96,7 +93,7 @@ FR9: The system shall validate the search input and display a prompt if the user
 FR10: The system shall allow all users to access the search, filter, and viewing features without requiring any form of login, registration, or account creation. Source: UC1, UC2, US5
 
 
-UC2: View Detailed Business Information and Understand Ratings
+**UC2: View Detailed Business Information and Understand Ratings**
 
 FR11: The system shall display a detailed information page when the user selects a business from the search results, showing the following fields from the dataset: business name, full address, postcode, business type, hygiene rating, rating date, rating status, and new rating pending indicator. Source: UC2, US3, US9
 
@@ -113,12 +110,9 @@ FR16: The system shall display the rating status for each business (for example,
 FR17: The system shall include an information section (either on the detail page or accessible from it) that explains what each hygiene rating score from 0 to 5 means in practice, so that users can interpret the ratings correctly. Source: UC2, US7
 
 
-<u> ### Non-Functional Requirements </u>
-TODO: Consider one or more [quality attributes](https://en.wikipedia.org/wiki/ISO/IEC_9126) to suggest a small number of non-functional requirements.
-Give each non-functional requirement a unique ID. e.g. NFR1, NFR2, ...
-Indicate which UC the requirement comes from.
+### Non-Functional Requirements 
 
-**Usability (ISO/IEC 9126)**
+**Usability**
 
 - NFR1: The system shall provide a clear and intuitive layout that allows users to complete a search and view a business's rating within three clicks or taps from the homepage. Source: UC1, UC2
 
@@ -126,25 +120,25 @@ Indicate which UC the requirement comes from.
 
 - NFR3: The system shall meet WCAG 2.1 Level AA accessibility standards. This includes ensuring all text has sufficient colour contrast, all images have descriptive alternative text, and all interactive elements can be operated using a keyboard. Source: UC2, US5
 
-**Performance (ISO/IEC 9126)**
+**Performance**
 
 - NFR4: The system shall return search results within two seconds for at least 95 percent of queries under normal network conditions. Source: UC1
 
 - NFR5: The system shall be capable of supporting at least 100 concurrent users without any noticeable slowdown or loss of functionality. Source: UC1
 
-**Reliability (ISO/IEC 9126)**
+**Reliability**
 
 - NFR6: The system shall remain available and functional at least 99 percent of the time during normal operating hours (06:00 to 23:00 GMT). Source: UC1, UC2
 
 - NFR7: The system shall handle failures from the Open Bristol Data API gracefully. If data cannot be retrieved, the system shall display a user-friendly error message rather than showing a blank page, broken layout, or technical error details. Source: UC1, UC2
 
-**Security (ISO/IEC 9126)**
+**Security**
 
 - NFR8: The system shall validate and sanitise all user inputs (including search terms and filter selections) to prevent cross-site scripting (XSS) attacks and other injection vulnerabilities. Source: UC1
 
 - NFR9: The system shall serve all pages over HTTPS to make sure that data transmitted between the user's browser and the server is encrypted. Source: UC1, UC2
 
-**Maintainability (ISO/IEC 9126)**
+**Maintainability**
 
 - NFR10: The system shall be built using modular, well-organised, and clearly commented HTML, CSS, and JavaScript code, so that future developers can understand and extend the application without difficulty. Source: UC1,
   UC2
