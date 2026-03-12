@@ -97,12 +97,19 @@ FR10: The system shall allow all users to access the search, filter, and viewing
 
 
 UC2: View Detailed Business Information and Understand Ratings
+
 FR11: The system shall display a detailed information page when the user selects a business from the search results, showing the following fields from the dataset: business name, full address, postcode, business type, hygiene rating, rating date, rating status, and new rating pending indicator. Source: UC2, US3, US9
+
 FR12: The system shall load and display the official food hygiene rating graphic for each business using the rating graphic URL provided by the Open Bristol dataset. Source: UC2, US10
+
 FR13: The system shall display the numeric rating value as a fallback if the rating graphic URL is missing or the image fails to load. Source: UC2, US10
+
 FR14: The system shall display a clear notice when a business is marked as "Awaiting Inspection", explaining that no rating is available because the business has not yet been inspected. Source: UC2, US9
+
 FR15: The system shall display a notice when the new rating pending field indicates that a new rating is pending, informing the user that the currently displayed rating may change soon. Source: UC2, US9
+
 FR16: The system shall display the rating status for each business (for example, rated, exempt, or awaiting inspection) in plain language that is easy for any user to understand. Source: UC2, US3
+
 FR17: The system shall include an information section (either on the detail page or accessible from it) that explains what each hygiene rating score from 0 to 5 means in practice, so that users can interpret the ratings correctly. Source: UC2, US7
 
 
@@ -112,20 +119,29 @@ Give each non-functional requirement a unique ID. e.g. NFR1, NFR2, ...
 Indicate which UC the requirement comes from.
 
 Usability (ISO/IEC 9126)
+
 NFR1: The system shall provide a clear and intuitive layout that allows users to complete a search and view a business's rating within three clicks or taps from the homepage. Source: UC1, UC2
+
 NFR2: The system shall be fully responsive and work correctly on mobile phones, tablets, and desktop computers, using responsive design techniques (such as CSS media queries or a flexible grid layout) to adapt to different screen sizes. Source: UC1, UC2, US8
+
 NFR3: The system shall meet WCAG 2.1 Level AA accessibility standards. This includes ensuring all text has sufficient colour contrast, all images have descriptive alternative text, and all interactive elements can be operated using a keyboard. Source: UC2, US5
 
 Performance (ISO/IEC 9126)
+
 NFR4: The system shall return search results within two seconds for at least 95 percent of queries under normal network conditions. Source: UC1
+
 NFR5: The system shall be capable of supporting at least 100 concurrent users without any noticeable slowdown or loss of functionality. Source: UC1
 
 Reliability (ISO/IEC 9126)
+
 NFR6: The system shall remain available and functional at least 99 percent of the time during normal operating hours (06:00 to 23:00 GMT). Source: UC1, UC2
+
 NFR7: The system shall handle failures from the Open Bristol Data API gracefully. If data cannot be retrieved, the system shall display a user-friendly error message rather than showing a blank page, broken layout, or technical error details. Source: UC1, UC2
 
 Security (ISO/IEC 9126)
+
 NFR8: The system shall validate and sanitise all user inputs (including search terms and filter selections) to prevent cross-site scripting (XSS) attacks and other injection vulnerabilities. Source: UC1
+
 NFR9: The system shall serve all pages over HTTPS to make sure that data transmitted between the user's browser and the server is encrypted. Source: UC1, UC2
 
 Maintainability (ISO/IEC 9126)
