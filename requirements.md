@@ -113,7 +113,7 @@ FR16: The system shall display the rating status for each business (for example,
 FR17: The system shall include an information section (either on the detail page or accessible from it) that explains what each hygiene rating score from 0 to 5 means in practice, so that users can interpret the ratings correctly. Source: UC2, US7
 
 
-### Non-Functional Requirements
+<u> ### Non-Functional Requirements </u>
 TODO: Consider one or more [quality attributes](https://en.wikipedia.org/wiki/ISO/IEC_9126) to suggest a small number of non-functional requirements.
 Give each non-functional requirement a unique ID. e.g. NFR1, NFR2, ...
 Indicate which UC the requirement comes from.
