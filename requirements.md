@@ -42,21 +42,20 @@ TODO: Describe each use case (at least one per team member).
     Give each use case a unique ID, e.g. UC1, UC2, ...
     Summarise these using the use-case template below.
 
-| UC1 | View Food Hygiene Rating Details | 
+| UC2 |  | 
 | -------------------------------------- | ------------------- |
-| **Description** | Allow users to search for food businesses in Bristol by entering a business name, postcode, or address, and optionally filter the results by hygiene rating score and business type. This use case addresses the core problem identified in the business case, which is that members of the public struggle to find easy-to-understand food hygiene ratings. It delivers the key business benefits of providing a user-friendly interface and real-time access to data. Sources: US1, US2, US4, US5, US6, US8. |
-| **Actors** | Primary: General Public User, Parent or Guardian. Secondary: System, Open Bristol Data API.|
-| **Assumptions** | Pre condition The Open Bristol Data API is available and returns data in the expected format. The user has access to a modern web browser on a desktop, tablet, or mobile device. The dataset contains records for food businesses in Bristol with the relevant data fields (business name, address, business type, rating, rating status, new rating pending, rating date, postcode, rating graphic URL).
-Post condition - The requested food hygiene rating data is successfully displayed to the user in the application.>
+| **Description** | |
+| **Actors** | |
+| **Assumptions** |
 | **Steps** | |
 | **Variations** |  |
 | **Non-functional** | |
 | **Issues** |  |
 
-| TODO: USE-CASE ID e.g. UC1, UC2, ... |  TODO: USE-CASE NAME | 
+| USE CASE 1|   View Food Hygiene Rating Details | 
 | -------------------------------------- | ------------------- |
-| **Description** | TODO: Goal to be achieved by use case and sources for requirement |
-| **Actors** | TODO: List of actors involved in use case |
+| **Description** | The application is a web-based system that allows users to search and view food hygiene ratings for businesses in Bristol. Users can search by business name, postcode, or address and filter results by hygiene rating or business type. The system retrieves data from the Open Bristol Data API and displays information such as the business name, address, hygiene rating, rating date, and rating status. The application is designed to help members of the public quickly find and understand hygiene ratings so they can make informed decisions about where to eat. Some key benefits of this web app is providing a user-friendly interface and real-time access to data. Sources: US1, US2, US4, US5, US6, US8 |
+| **Actors** | Primary: General Public User, Parent or Guardian. Secondary: System, Open Bristol Data API.|
 | **Assumptions** |  Pre condition The Open Bristol Data API is available and returns data in the expected format. The user has access to a modern web browser on a desktop, tablet, or mobile device. The dataset contains records for food businesses in Bristol with the relevant data fields (business name, address, business type, rating, rating status, new rating pending, rating date, postcode, rating graphic URL). Post condition - The requested food hygiene rating data is successfully displayed to the user in the application.
 | **Steps** | 1. The user opens the web application in their browser and arrives at the homepage. 2. The user enters a search term into the search bar. This could be a business name, a postcode, or part of an address. 3. The system validates the input to check it is not empty or invalid. 4. The system queries the Open Bristol dataset using the search term. 5. The system retrieves matching food businesses and displays them in a results list. Each result shows the business name, address, business type, hygiene rating (displayed as a number from 0 to 5, or as "Awaiting Inspection" if no rating exists), and the rating date. 6. The user optionally applies one or more filters to narrow the results. Available filters include hygiene rating score (0 to 5) and business type category (for example, restaurant, takeaway, cafe, pub or bar, school, hotel). 7. The system updates the displayed results to show only the businesses that match all active filters. 8. The user browses the filtered results and selects a business to view in more detail (this leads to UC2). |
 | **Variations** |  1- If the user submits an empty or clearly invalid search term, the system displays a prompt asking them to enter a valid search. 2- If no businesses match the search term, the system displays a message saying no results were found and suggests the user try a different or broader search. 6a. The user may choose to use filters without first performing a text search, in which case the system displays all businesses in the dataset that match the selected filter criteria.|
