@@ -61,6 +61,7 @@ NFR5 – Capacity: The system must support at least 100 concurrent users without
 
 NFR8 – Security:
 The system shall validate all user input, such as search terms and filter selections, to ensure that no harmful or malicious code can be entered into the application. This helps protect the system from security risks such  and ensures the application remains safe for all users.|
+
 | **Issues** | TODO: OPTIONAL - The "rating status" field in the Open Bristol dataset can contain several different values ie “Awaiting Inspection, rated, exempt,” or may not yet have a hygiene rating. The application needs to ensure these cases are clearly explained to users so they are not confused by missing ratings. |
 
 | TODO: USE-CASE ID e.g. UC1, UC2, ... |  TODO: USE-CASE NAME | 
