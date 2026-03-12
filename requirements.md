@@ -120,30 +120,30 @@ Indicate which UC the requirement comes from.
 
 **Usability (ISO/IEC 9126)**
 
-NFR1: The system shall provide a clear and intuitive layout that allows users to complete a search and view a business's rating within three clicks or taps from the homepage. Source: UC1, UC2
+*NFR1: The system shall provide a clear and intuitive layout that allows users to complete a search and view a business's rating within three clicks or taps from the homepage. Source: UC1, UC2
 
-NFR2: The system shall be fully responsive and work correctly on mobile phones, tablets, and desktop computers, using responsive design techniques (such as CSS media queries or a flexible grid layout) to adapt to different screen sizes. Source: UC1, UC2, US8
+*NFR2: The system shall be fully responsive and work correctly on mobile phones, tablets, and desktop computers, using responsive design techniques (such as CSS media queries or a flexible grid layout) to adapt to different screen sizes. Source: UC1, UC2, US8
 
-NFR3: The system shall meet WCAG 2.1 Level AA accessibility standards. This includes ensuring all text has sufficient colour contrast, all images have descriptive alternative text, and all interactive elements can be operated using a keyboard. Source: UC2, US5
+*NFR3: The system shall meet WCAG 2.1 Level AA accessibility standards. This includes ensuring all text has sufficient colour contrast, all images have descriptive alternative text, and all interactive elements can be operated using a keyboard. Source: UC2, US5
 
 **Performance (ISO/IEC 9126)**
 
-NFR4: The system shall return search results within two seconds for at least 95 percent of queries under normal network conditions. Source: UC1
+*NFR4: The system shall return search results within two seconds for at least 95 percent of queries under normal network conditions. Source: UC1
 
-NFR5: The system shall be capable of supporting at least 100 concurrent users without any noticeable slowdown or loss of functionality. Source: UC1
+*NFR5: The system shall be capable of supporting at least 100 concurrent users without any noticeable slowdown or loss of functionality. Source: UC1
 
 **Reliability (ISO/IEC 9126)**
 
-NFR6: The system shall remain available and functional at least 99 percent of the time during normal operating hours (06:00 to 23:00 GMT). Source: UC1, UC2
+*NFR6: The system shall remain available and functional at least 99 percent of the time during normal operating hours (06:00 to 23:00 GMT). Source: UC1, UC2
 
-NFR7: The system shall handle failures from the Open Bristol Data API gracefully. If data cannot be retrieved, the system shall display a user-friendly error message rather than showing a blank page, broken layout, or technical error details. Source: UC1, UC2
+*NFR7: The system shall handle failures from the Open Bristol Data API gracefully. If data cannot be retrieved, the system shall display a user-friendly error message rather than showing a blank page, broken layout, or technical error details. Source: UC1, UC2
 
 **Security (ISO/IEC 9126)**
 
-NFR8: The system shall validate and sanitise all user inputs (including search terms and filter selections) to prevent cross-site scripting (XSS) attacks and other injection vulnerabilities. Source: UC1
+*NFR8: The system shall validate and sanitise all user inputs (including search terms and filter selections) to prevent cross-site scripting (XSS) attacks and other injection vulnerabilities. Source: UC1
 
-NFR9: The system shall serve all pages over HTTPS to make sure that data transmitted between the user's browser and the server is encrypted. Source: UC1, UC2
+*NFR9: The system shall serve all pages over HTTPS to make sure that data transmitted between the user's browser and the server is encrypted. Source: UC1, UC2
 
 **Maintainability (ISO/IEC 9126)**
 
-NFR10: The system shall be built using modular, well-organised, and clearly commented HTML, CSS, and JavaScript code, so that future developers can understand and extend the application without difficulty. Source: UC1, UC2
+*NFR10: The system shall be built using modular, well-organised, and clearly commented HTML, CSS, and JavaScript code, so that future developers can understand and extend the application without difficulty. Source: UC1, UC2
