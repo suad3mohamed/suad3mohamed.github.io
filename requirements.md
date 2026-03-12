@@ -61,7 +61,7 @@ Post condition - The requested food hygiene rating data is successfully displaye
 | **Steps** | TODO: Interactions between actors and system necessary to achieve goal |
 | **Variations** | TODO: OPTIONAL - Any variations in the steps of a use case |
 | **Non-functional** | TODO: OPTIONAL - List of non-functional requirements that the use case must meet. |
-| **Issues** | TODO: OPTIONAL - List of issues that remain to be resolved |
+| **Issues** | The "rating status" field in the Open Bristol dataset can contain several different values ie “Awaiting Inspection, rated, exempt,” or may not yet have a hygiene rating. The application needs to ensure these cases are clearly explained to users so they are not confused by missing ratings. |
 
 
 TODO: Your Use-Case diagram should include all use-cases.
