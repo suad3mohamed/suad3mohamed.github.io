@@ -72,42 +72,42 @@ TODO: Your Use-Case diagram should include all use-cases.
 
 **UC1: Search and Filter Food Hygiene Ratings**
 
-FR1: The system shall provide a search bar on the homepage that allows users to enter a business name, postcode, or address to search for food businesses. Source: UC1, US1, US6
+- FR1: The system shall provide a search bar on the homepage that allows users to enter a business name, postcode, or address to search for food businesses. Source: UC1, US1, US6
 
-FR2: The system shall query the Open Bristol Data API using the user's search term and retrieve matching food business records. Source: UC1
+- FR2: The system shall query the Open Bristol Data API using the user's search term and retrieve matching food business records. Source: UC1
 
-FR3: The system shall display search results in a list format, with each result showing the business name, address, business type, hygiene rating (0 to 5), and rating date. Source: UC1, US1
+- FR3: The system shall display search results in a list format, with each result showing the business name, address, business type, hygiene rating (0 to 5), and rating date. Source: UC1, US1
 
-FR4: The system shall display "Awaiting Inspection" in place of a numeric rating for any business that has not yet been inspected. Source: UC1, US9
+- FR4: The system shall display "Awaiting Inspection" in place of a numeric rating for any business that has not yet been inspected. Source: UC1, US9
 
-FR5: The system shall allow users to filter the displayed results by hygiene rating score, enabling the user to select one or more values from 0 to 5. Source: UC1, US2
+- FR5: The system shall allow users to filter the displayed results by hygiene rating score, enabling the user to select one or more values from 0 to 5. Source: UC1, US2
 
-FR6: The system shall allow users to filter the displayed results by business type category (for example, restaurant, takeaway, cafe, pub or bar, school, hotel). Source: UC1, US4
+- FR6: The system shall allow users to filter the displayed results by business type category (for example, restaurant, takeaway, cafe, pub or bar, school, hotel). Source: UC1, US4
 
-FR7: The system shall allow users to apply both a rating filter and a business type filter at the same time, with the results updating to reflect all active filters. Source: UC1, US2, US4
+- FR7: The system shall allow users to apply both a rating filter and a business type filter at the same time, with the results updating to reflect all active filters. Source: UC1, US2, US4
 
-FR8: The system shall display a clear message when no results match the user's search or filter criteria, suggesting the user broadens their search. Source: UC1
+- FR8: The system shall display a clear message when no results match the user's search or filter criteria, suggesting the user broadens their search. Source: UC1
 
-FR9: The system shall validate the search input and display a prompt if the user submits an empty or invalid search term. Source: UC1
+- FR9: The system shall validate the search input and display a prompt if the user submits an empty or invalid search term. Source: UC1
 
-FR10: The system shall allow all users to access the search, filter, and viewing features without requiring any form of login, registration, or account creation. Source: UC1, UC2, US5
+- FR10: The system shall allow all users to access the search, filter, and viewing features without requiring any form of login, registration, or account creation. Source: UC1, UC2, US5
 
 
 **UC2: View Detailed Business Information and Understand Ratings**
 
-FR11: The system shall display a detailed information page when the user selects a business from the search results, showing the following fields from the dataset: business name, full address, postcode, business type, hygiene rating, rating date, rating status, and new rating pending indicator. Source: UC2, US3, US9
+- FR11: The system shall display a detailed information page when the user selects a business from the search results, showing the following fields from the dataset: business name, full address, postcode, business type, hygiene rating, rating date, rating status, and new rating pending indicator. Source: UC2, US3, US9
 
-FR12: The system shall load and display the official food hygiene rating graphic for each business using the rating graphic URL provided by the Open Bristol dataset. Source: UC2, US10
+- FR12: The system shall load and display the official food hygiene rating graphic for each business using the rating graphic URL provided by the Open Bristol dataset. Source: UC2, US10
 
-FR13: The system shall display the numeric rating value as a fallback if the rating graphic URL is missing or the image fails to load. Source: UC2, US10
+- FR13: The system shall display the numeric rating value as a fallback if the rating graphic URL is missing or the image fails to load. Source: UC2, US10
 
-FR14: The system shall display a clear notice when a business is marked as "Awaiting Inspection", explaining that no rating is available because the business has not yet been inspected. Source: UC2, US9
+- FR14: The system shall display a clear notice when a business is marked as "Awaiting Inspection", explaining that no rating is available because the business has not yet been inspected. Source: UC2, US9
 
-FR15: The system shall display a notice when the new rating pending field indicates that a new rating is pending, informing the user that the currently displayed rating may change soon. Source: UC2, US9
+- FR15: The system shall display a notice when the new rating pending field indicates that a new rating is pending, informing the user that the currently displayed rating may change soon. Source: UC2, US9
 
-FR16: The system shall display the rating status for each business (for example, rated, exempt, or awaiting inspection) in plain language that is easy for any user to understand. Source: UC2, US3
+- FR16: The system shall display the rating status for each business (for example, rated, exempt, or awaiting inspection) in plain language that is easy for any user to understand. Source: UC2, US3
 
-FR17: The system shall include an information section (either on the detail page or accessible from it) that explains what each hygiene rating score from 0 to 5 means in practice, so that users can interpret the ratings correctly. Source: UC2, US7
+- FR17: The system shall include an information section (either on the detail page or accessible from it) that explains what each hygiene rating score from 0 to 5 means in practice, so that users can interpret the ratings correctly. Source: UC2, US7
 
 
 ### Non-Functional Requirements 
