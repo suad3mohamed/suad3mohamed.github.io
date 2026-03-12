@@ -44,10 +44,11 @@ TODO: Describe each use case (at least one per team member).
 
 | UC2 |  | 
 | -------------------------------------- | ------------------- |
-| **Description** | |
-| **Actors** | |
-| **Assumptions** |
-| **Steps** | |
+| **Description** |This use case allows users to understand what the food hygiene ratings (0–5) mean for each business. Instead of only seeing a number, the user can learn the significance of the rating, such as whether a score indicates excellent hygiene, satisfactory conditions, or urgent improvements needed. By providing clear explanations, the system helps users make informed and safe decisions about where to eat |
+| **Actors** | Primary: General Public User, Parent or Guardian. Secondary: System, Open Bristol Data API. |
+| **Assumptions** | 
+| **Steps** | - The user has already performed a search or applied filters and is viewing a list of food businesses. 2- The user has selected a specific food business from the search results to view its details. 
+3 - The system has access to the Open Bristol Data API and can retrieve the latest rating information (score, status, and rating date) for the selected business. 4-  The user is ready to read and interpret the rating information, including the numeric score, rating status, and any relevant notes provided by the system.|
 | **Variations** |  |
 | **Non-functional** | |
 | **Issues** |  |
