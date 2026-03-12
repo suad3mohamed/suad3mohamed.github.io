@@ -6,8 +6,36 @@
 TODO: Write brief user stories to explain how various actors would interact with the system to accomplish a goal.
     Express these in the form from agile development:- As a (role) I want (goal) so that (benefit).
 
+US1: As a member of the public, I want to search for food businesses by name, postcode, or address so that I can quickly find hygiene ratings for places I am interested in visiting.
+
+US2: As a health-conscious consumer, I want to filter food businesses by their hygiene rating score (0 to 5) so that I can easily identify establishments with high hygiene standards.
+
+US3: As a concerned diner, I want to view detailed information about a food business including its rating date and whether a new rating is pending so that I can judge how current and reliable the displayed rating is.
+
+US4: As a parent, I want to filter businesses by their type (for example, restaurants, takeaways, schools, pubs) so that I can find appropriate and safe dining options for my family.
+
+US5: As a public user, I want to access and view all hygiene ratings without needing to create an account or log in so that I can get important health information immediately with no barriers.
+
+US6: As a first-time visitor to Bristol, I want to browse food businesses in a specific area by entering a postcode so that I can find hygienic places to eat near where I am staying.
+
+US7: As a consumer unfamiliar with food hygiene ratings, I want to understand what each rating score from 0 to 5 means so that I can properly interpret the information and make informed choices about where to eat.
+
+US8: As a user on my mobile phone, I want the web application to display properly on smaller screens so that I can check hygiene ratings while I am out and about.
+
+US9: As a member of the public, I want to see whether a business is awaiting inspection or has a new rating pending so that I know if the displayed rating might not reflect the current state of the business.
+
+US10: As a regular user, I want to see the official food hygiene rating graphic for each business so that I can recognise the same rating format that is displayed on the doors of food establishments.
+
 ### Actors
 TODO: List and describe the actors/users for this product.
+
+1. General Public User Any member of the public who visits the web application to look up food hygiene ratings for businesses in Bristol. This is the primary actor and represents the widest audience. It includes local residents, tourists, students, and anyone who wants to make a more informed choice about where to eat. The general public user does not need to create an account or log in. They have full access to all search, filter, and viewing features provided by the application.
+
+2. Parent or Guardian A specific type of general public user who is particularly focused on finding safe and hygienic food options suitable for children and families. This actor places importance on being able to filter by business categories such as schools, cafes, and restaurants, and tends to look for establishments with the highest hygiene ratings. While they use the same features as the general public user, their goals and priorities are distinct enough to be considered separately.
+
+3. System (Web Application) The Bristol Food Hygiene Ratings web application itself. This is not a human actor, but it plays an active role in the use cases by retrieving data from the Open Bristol dataset, processing search queries and filters, and presenting the results to the user. The system fetches data that includes business name, address, business type, rating, rating status, new rating pending, rating date, postcode, and rating graphic URL.
+
+4. Open Bristol Data API (External System) The external data source that supplies all food hygiene rating information used by the application. This is an external actor that the system depends on. It provides a publicly accessible API through which the application retrieves up-to-date records about food businesses in Bristol. The data fields provided include: business name, address, business type, rating, rating status, new rating pending, rating date, postcode, and rating graphic URL.
 
 ### Use Cases
 TODO: Describe each use case (at least one per team member).
@@ -36,9 +64,49 @@ TODO: create a list of functional requirements.
     Give each functional requirement a unique ID. e.g. FR1, FR2, ...
     Indicate which UC the requirement comes from.
 
+UC1: Search and Filter Food Hygiene Ratings
+FR1: The system shall provide a search bar on the homepage that allows users to enter a business name, postcode, or address to search for food businesses. Source: UC1, US1, US6
+FR2: The system shall query the Open Bristol Data API using the user's search term and retrieve matching food business records. Source: UC1
+FR3: The system shall display search results in a list format, with each result showing the business name, address, business type, hygiene rating (0 to 5), and rating date. Source: UC1, US1
+FR4: The system shall display "Awaiting Inspection" in place of a numeric rating for any business that has not yet been inspected. Source: UC1, US9
+FR5: The system shall allow users to filter the displayed results by hygiene rating score, enabling the user to select one or more values from 0 to 5. Source: UC1, US2
+FR6: The system shall allow users to filter the displayed results by business type category (for example, restaurant, takeaway, cafe, pub or bar, school, hotel). Source: UC1, US4
+FR7: The system shall allow users to apply both a rating filter and a business type filter at the same time, with the results updating to reflect all active filters. Source: UC1, US2, US4
+FR8: The system shall display a clear message when no results match the user's search or filter criteria, suggesting the user broadens their search. Source: UC1
+FR9: The system shall validate the search input and display a prompt if the user submits an empty or invalid search term. Source: UC1
+FR10: The system shall allow all users to access the search, filter, and viewing features without requiring any form of login, registration, or account creation. Source: UC1, UC2, US5
+
+UC2: View Detailed Business Information and Understand Ratings
+FR11: The system shall display a detailed information page when the user selects a business from the search results, showing the following fields from the dataset: business name, full address, postcode, business type, hygiene rating, rating date, rating status, and new rating pending indicator. Source: UC2, US3, US9
+FR12: The system shall load and display the official food hygiene rating graphic for each business using the rating graphic URL provided by the Open Bristol dataset. Source: UC2, US10
+FR13: The system shall display the numeric rating value as a fallback if the rating graphic URL is missing or the image fails to load. Source: UC2, US10
+FR14: The system shall display a clear notice when a business is marked as "Awaiting Inspection", explaining that no rating is available because the business has not yet been inspected. Source: UC2, US9
+FR15: The system shall display a notice when the new rating pending field indicates that a new rating is pending, informing the user that the currently displayed rating may change soon. Source: UC2, US9
+FR16: The system shall display the rating status for each business (for example, rated, exempt, or awaiting inspection) in plain language that is easy for any user to understand. Source: UC2, US3
+FR17: The system shall include an information section (either on the detail page or accessible from it) that explains what each hygiene rating score from 0 to 5 means in practice, so that users can interpret the ratings correctly. Source: UC2, US7
+
 
 ### Non-Functional Requirements
 TODO: Consider one or more [quality attributes](https://en.wikipedia.org/wiki/ISO/IEC_9126) to suggest a small number of non-functional requirements.
 Give each non-functional requirement a unique ID. e.g. NFR1, NFR2, ...
-
 Indicate which UC the requirement comes from.
+
+Usability (ISO/IEC 9126)
+NFR1: The system shall provide a clear and intuitive layout that allows users to complete a search and view a business's rating within three clicks or taps from the homepage. Source: UC1, UC2
+NFR2: The system shall be fully responsive and work correctly on mobile phones, tablets, and desktop computers, using responsive design techniques (such as CSS media queries or a flexible grid layout) to adapt to different screen sizes. Source: UC1, UC2, US8
+NFR3: The system shall meet WCAG 2.1 Level AA accessibility standards. This includes ensuring all text has sufficient colour contrast, all images have descriptive alternative text, and all interactive elements can be operated using a keyboard. Source: UC2, US5
+
+Performance (ISO/IEC 9126)
+NFR4: The system shall return search results within two seconds for at least 95 percent of queries under normal network conditions. Source: UC1
+NFR5: The system shall be capable of supporting at least 100 concurrent users without any noticeable slowdown or loss of functionality. Source: UC1
+
+Reliability (ISO/IEC 9126)
+NFR6: The system shall remain available and functional at least 99 percent of the time during normal operating hours (06:00 to 23:00 GMT). Source: UC1, UC2
+NFR7: The system shall handle failures from the Open Bristol Data API gracefully. If data cannot be retrieved, the system shall display a user-friendly error message rather than showing a blank page, broken layout, or technical error details. Source: UC1, UC2
+
+Security (ISO/IEC 9126)
+NFR8: The system shall validate and sanitise all user inputs (including search terms and filter selections) to prevent cross-site scripting (XSS) attacks and other injection vulnerabilities. Source: UC1
+NFR9: The system shall serve all pages over HTTPS to make sure that data transmitted between the user's browser and the server is encrypted. Source: UC1, UC2
+
+Maintainability (ISO/IEC 9126)
+NFR10: The system shall be built using modular, well-organised, and clearly commented HTML, CSS, and JavaScript code, so that future developers can understand and extend the application without difficulty. Source: UC1, UC2
