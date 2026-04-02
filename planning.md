@@ -3,7 +3,6 @@
 ## Business Case
 
 ### Problem statement
----
 The current sources for viewing food hygiene ratings in Bristol are often outdated, difficult to navigate, or require downloading large datasets. Local food‑business owners receive inspection results that are published days or even weeks after the actual visit, creating a delay between when businesses make necessary improvements and when the public is informed. Members of the public often struggle to find easy‑to‑understand food hygiene ratings for restaurants and takeaways in Bristol. While the data exists in the Open Bristol datasets, it is not presented in a simple or accessible format, making it difficult for users to quickly check whether a food business is safe and hygienic. Many people are unaware of where to look for this information, which increases the risk of choosing unsafe establishments. High volume of unrated new businesses – Over 42 000 newly registered food premises have not yet received their first inspection, meaning a large segment of the market operates without any publicly available hygiene information. A modern, user‑friendly web application is needed to simplify access to food hygiene ratings, providing a seamless and accessible platform where the public can easily explore, view, and understand this important information, ensuring that everyone can make safer, more informed choices when dining out.
 
 
