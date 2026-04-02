@@ -63,9 +63,8 @@ TODO: List and describe the actors/users for this product.
 | **Issues** | The "rating status" field in the Open Bristol dataset can contain several different values ie “Awaiting Inspection, rated, exempt,” or may not yet have a hygiene rating. The application needs to ensure these cases are clearly explained to users so they are not confused by missing ratings. |
 
 
-TODO: Your Use-Case diagram should include all use-cases.
 
-![Insert your Use-Case Diagram Here](images/use-case.png)
+<img width="1408" height="768" alt="use case diagram " src="https://github.com/user-attachments/assets/9ac5f54b-0d1b-4fc2-9011-6cded2df6ee7" />
 
 ## Software Requirements Specification
 ### Functional requirements
