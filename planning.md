@@ -57,4 +57,4 @@ The layout will adjust automatically for desktop, tablet, and mobile screens, wi
 - Creating or managing user accounts.
 - Historical Data Tracking: The app will only show the most recent inspection result. It will not maintain a public archive of a business's previous scores from past years.
 
-![Insert your Context Diagram Here](Pictures/contextdiagram.png)
+![Insert your Context Diagram Here](Videos/contextdiagram.png)
