@@ -21,6 +21,9 @@ Improved Public Health (This app aims to helps consumers make safer decisions wh
 
 6- Data Transparency ( The app provides full transparency by showing food hygiene ratings exactly as they are, with no changes or adjustments. This allows the public to view the ratings clearly and holds businesses accountable for their hygiene practices)
 
+### Systems Development Approach
+The project will follow an iterative Systems Development Life Cycle (SDLC) model. Development will start with a basic version that connects to the Open Bristol API to display hygiene ratings, then new features such as filtering and accessibility improvements will be added in later iterations. This approach supports continuous testing and feedback, ensuring that quality and functionality improve with each stage.
+
 ### Options Considered
 1) Government Websites (FSA or Local Council)  - These sites have the data, but they’re hard to navigate, not mobile-friendly, and users can’t easily filter results. They often have to search or download large files.
 2) Open Data Platforms (e.g., Open Bristol) -  Just like the goverment webs, open data has the ratings, but it’s in a format that's hard for most people to understand. Users would need to download big files and figure out how to use the data, which isn’t quick or easy.
