@@ -31,16 +31,28 @@ Improved Public Health (This app aims to helps consumers make safer decisions wh
 ### Expected Risks
 1) Privacy and Security Concerns
  If the app allows users to report hygiene issues or leave feedback, it’s essential to ensure both user and business information is kept confidential. Without proper security measures, there’s a risk of breach of data, which could lead to violations of privacy laws.
-2) Maintenance and Scalability
+Mitigation: Ths web app will use HTTPS to keep all communication between the app and users encrypted and secure. It will also limit data collection only gathering basic information that is essential for feedback and avoid storing names or contact details.
+3) Maintenance and Scalability
 The app may face challenges in scaling as the number of food premises grows. Continuous updates and maintenance may be needed to ensure the app remains reliable, especially as new hygiene inspection data is added regularly.
-3) Incomplete Data / Data Accuracy
- There are thousands of new food businesses without hygiene ratings, so it may take time for the app to gather and display accurate information for all of them. This could result in incomplete data, which might frustrate users who expect to see ratings for every business. Also, since food hygiene ratings rely on inspections conducted by local authorities, there may be a delay in receiving and updating this data. Any inconsistency or delay of inspection results could affect the reliability of the app
+Mitigation: Schedule regular maintenance checks at intervals (e.g., every 2–4 weeks). This is to test functionality, verify data freshness, and check links or API responses. Developers can maintain a simple maintenance log documenting updates and fixes.
+4) Incomplete Data / Data Accuracy
+ There are thousands of new food businesses without hygiene ratings, so it may take time for the app to gather and display accurate information for all of them. This could result in incomplete data, which might frustrate users who expect to see ratings for every business. Also, since food hygiene ratings rely on inspections conducted by local authorities, there may be a delay in receiving and updating this data. Any inconsistency or delay of inspection results could affect the reliability of the app.
+Mitigation: 1 - Use simple labels such as “Awaiting Inspection” or “No Rating Yet” instead of leaving blank spaces. This helps users understand that missing ratings are normal and not app errors.
+2 - Refresh the data often using the Open Bristol API so users always see the latest version. The app will also stay in sync with Open Bristol data by connecting directly to the Open Data API. It will fetch information live or through a timed refresh, while regular maintenance checks will verify the API structure to ensure everything continues to work correctly. If the API fails or sends missing data, it will show an easy‑to‑read message such as “Data temporarily unavailable — please try again later.”
+
 
 
 ## Project Scope
-- Food Hygiene Ratings Display 
-- Business Feedback and Reporting
-- Search and Filter Features
-- User Account Management
+- Food Hygiene Ratings Display:
+The web app will show up‑to‑date ratings for food businesses across Bristol using data from the Open Bristol API. Each listing will display the business name, address, rating score (0 – 5), and the inspection date.
+
+- Search and Filter Features:
+Users can search by business name, postcode, or area and use filters to view businesses by rating level or type (for example restaurant, café, takeaway, or school). The results will be shown in a clear, easy‑to‑read list.
+
+- Food Hygiene Rating Guide:
+A dedicated page will explain what each rating means, what “Awaiting Inspection” or “New Rating Pending” statuses show, and how the inspection process works. This helps users understand the meaning behind each score.
+
+- Responsive and Accessible Design:
+The layout will adjust automatically for desktop, tablet, and mobile screens, with strong colour contrast, readable text, alt‑text for icons, and keyboard navigation support.
 
 ![Insert your Context Diagram Here](images/context.png)
