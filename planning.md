@@ -8,11 +8,17 @@ The current sources for viewing food hygiene ratings in Bristol are often outdat
 
 ### Business benefits
 1- User-Friendly Interface (The app offers an easy-to-navigate interface that makes it simple for users to search, filter, and view hygiene ratings,ensuring accessibility for all.)
+
 2- Improved Public Health (This app aims to helps consumers make safer decisions when choosing where to eat, reducing the risk of foodborne illnesses.)
+
 3- Competitive Advantage for Businesses (Food businesses with high hygiene ratings can use the platform as a marketing tool to attract health-conscious customers.
+
 4- Encourages Hygiene Improvements (With ratings visible to the public, businesses are motivated to improve their hygiene standards to stay competitive. This encourages them to keep up with or surpass others in order to attract more customers who care about hygiene.)
+
 5- User Engagement and Feedback (Allows consumers to report hygiene issues or provide feedback on their dining experiences, creating an interactive environment for accountability.)
+
 6- Real-Time Data Access (The application ensures that users have immediate access to the latest food hygiene ratings)
+
 7- Data Transparency ( The app provides full transparency by showing food hygiene ratings exactly as they are, with no changes or adjustments. This allows the public to view the ratings clearly and holds businesses accountable for their hygiene practices)
 
 ### Systems Development Approach
