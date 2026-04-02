@@ -58,3 +58,4 @@ The layout will adjust automatically for desktop, tablet, and mobile screens, wi
 - Historical Data Tracking: The app will only show the most recent inspection result. It will not maintain a public archive of a business's previous scores from past years.
 
 ![Insert your Context Diagram Here](pictures/contextdiagram.png)
+<img width="1380" height="693" alt="contextdiagram" src="https://github.com/user-attachments/assets/1091a454-c36a-483a-848a-a0aece940848" />
