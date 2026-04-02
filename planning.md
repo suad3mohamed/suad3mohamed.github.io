@@ -43,16 +43,22 @@ Mitigation: 1 - Use simple labels such as “Awaiting Inspection” or “No�
 
 
 ## Project Scope
+## In scope
 - Food Hygiene Ratings Display:
 The web app will show up‑to‑date ratings for food businesses across Bristol using data from the Open Bristol API. Each listing will display the business name, address, rating score (0 – 5), and the inspection date.
-
 - Search and Filter Features:
 Users can search by business name, postcode, or area and use filters to view businesses by rating level or type (for example restaurant, café, takeaway, or school). The results will be shown in a clear, easy‑to‑read list.
-
 - Food Hygiene Rating Guide:
 A dedicated page will explain what each rating means, what “Awaiting Inspection” or “New Rating Pending” statuses show, and how the inspection process works. This helps users understand the meaning behind each score.
-
 - Responsive and Accessible Design:
 The layout will adjust automatically for desktop, tablet, and mobile screens, with strong colour contrast, readable text, alt‑text for icons, and keyboard navigation support.
+
+## Out of scope 
+
+- No Live Directions: The app will show you the address of the business, but it will not give you a "Sat-Nav" style map or live directions to get there.
+- Push Notifications: The application will not send automated alerts to mobile devices regarding nearby rating changes; it functions as a pull-based search tool only.
+- User-Generated Content: Users will not be able to post their own reviews, hygiene concerns/ complaints, photos of food, or personal star ratings. The app is strictly a data-mirror for official government ratings
+- Creating or managing user accounts.
+- Historical Data Tracking: The app will only show the most recent inspection result. It will not maintain a public archive of a business's previous scores from past years.
 
 ![Insert your Context Diagram Here](images/context.png)
