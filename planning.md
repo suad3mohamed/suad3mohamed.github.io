@@ -57,7 +57,6 @@ A dedicated page will explain what each rating means, what “Awaiting Inspect
 The layout will adjust automatically for desktop, tablet, and mobile screens, with strong colour contrast, readable text, alt‑text for icons, and keyboard navigation support.
 
 ## Out of scope 
-
 - No Live Directions: The app will show you the address of the business, but it will not give you a "Sat-Nav" style map or live directions to get there.
 - Push Notifications: The application will not send automated alerts to mobile devices regarding nearby rating changes; it functions as a pull-based search tool only.
 - User-Generated Content: Users will not be able to post their own reviews, hygiene concerns/ complaints, photos of food, or personal star ratings. The app is strictly a data-mirror for official government ratings
