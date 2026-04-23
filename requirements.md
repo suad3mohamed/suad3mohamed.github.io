@@ -39,19 +39,6 @@ TODO: List and describe the actors/users for this product.
 
 ### Use Cases
 
-
-| UC2 |  View and Understand Hygiene Rating Scores| 
-| -------------------------------------- | ------------------- |
-| **Description** |This use case allows users to understand what the food hygiene ratings (0–5) mean for each business. Instead of only seeing a number, the user can learn the significance of the rating, such as whether a score indicates excellent hygiene, satisfactory conditions, or urgent improvements needed. By providing clear explanations, the system helps users make informed and safe decisions about where to eat. |
-| **Actors** | Primary: General Public User, Parent or Guardian. Secondary: System, Open Bristol Data API. |
-| **Assumptions** | The Open Bristol Data API is available and providing up-to-date rating information for food businesses. The system is fully operational and capable of displaying business details correctly. The user is accessing the application through a modern web browser or device that can show the website and the rating images properly.. Additionally, it is assumed that the dataset contains all the necessary information for the selected business, including the name, address, rating score, rating status, rating date, and rating graphic, so that the user can read and interpret the rating accurately.
-| **Steps** | 1- The user has already performed a search or applied filters and is viewing a list of food businesses. 2- The user has selected a specific food business from the search results to view its details. 3- The system has access to the Open Bristol Data API and can retrieve the latest rating information (score, status, and rating date) for the selected business. 4-  The user is ready to read and interpret the rating information, including the numeric score, rating status, and any relevant notes provided by the system.|
-| **Variations** |  |
-| **Non-functional** | |
-| **Issues** |  |
-
-
-
 | USE CASE 1|   View Food Hygiene Rating Details | 
 | -------------------------------------- | ------------------- |
 | **Description** | The application is a web-based system that allows users to search and view food hygiene ratings for businesses in Bristol. Users can search by business name, postcode, or address and filter results by hygiene rating or business type. The system retrieves data from the Open Bristol Data API and displays information such as the business name, address, hygiene rating, rating date, and rating status. The application is designed to help members of the public quickly find and understand hygiene ratings so they can make informed decisions about where to eat. Some key benefits of this web app is providing a user-friendly interface and real-time access to data. Sources: US1, US2, US4, US5, US6, US8 |
